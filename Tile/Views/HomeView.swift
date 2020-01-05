@@ -11,39 +11,33 @@ import SwiftUI
 struct HomeView: View {
 //    let itemList: [TileItem]
 
+    @State private var isNavigationBarHidden = true
+
     var body: some View {
-        VStack {
-            HStack {
-                Button(action: {}) {
-                    Image(systemName: "plus.app")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .foregroundColor(AppColor.darkGray)
-                }
-                Spacer()
-                Image("TileLogo")
-                    .resizable()
-                    .frame(width: 90, height: 90)
-                Spacer()
-                Button(action: {}) {
-                    Image(systemName: "gear")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(AppColor.darkGray)
-                }
-            }.padding(.horizontal, 30)
-            // TODO: Add logic to rendering the items
+        NavigationView {
             VStack {
-                HStack {
-                    HomeItemView().padding(.horizontal, 8)
-                    HomeItemView().padding(.horizontal, 8)
+                AppBarView()
+                // TODO: Add logic to rendering the items
+                VStack {
+                    HStack {
+                        NavigationLink(
+                            destination: HomeItemDetailView(
+                                isNavigationBarHidden: $isNavigationBarHidden
+                            )
+                        ) {
+                            HomeItemView().padding(.horizontal, 8)
+                        }.buttonStyle(PlainButtonStyle())
+                        HomeItemView().padding(.horizontal, 8)
+                    }
+                    HStack {
+                        HomeItemView().padding(.horizontal, 8)
+                        HomeItemView().padding(.horizontal, 8)
+                    }
                 }
-                HStack {
-                    HomeItemView().padding(.horizontal, 8)
-                    HomeItemView().padding(.horizontal, 8)
-                }
+                Spacer()
             }
-            Spacer()
+            .navigationBarHidden(isNavigationBarHidden)
+            .navigationBarTitle("")
         }
     }
 }
