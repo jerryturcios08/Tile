@@ -25,9 +25,9 @@ struct TabBarView: View {
                 .foregroundColor(Color.black)
             }
             Spacer()
-            Button(action: {self.viewSelected = Screen.map}) {
+            Button(action: {self.viewSelected = Screen.location}) {
                 Image(
-                    systemName: viewSelected == Screen.map ?
+                    systemName: viewSelected == Screen.location ?
                         "map.fill" : "map"
                 )
                 .resizable()

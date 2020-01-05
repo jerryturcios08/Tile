@@ -21,6 +21,10 @@
 		C63599C623C2679F0046A700 /* TileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63599C523C2679F0046A700 /* TileItem.swift */; };
 		C63599C923C2732A0046A700 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63599C823C2732A0046A700 /* ButtonModifiers.swift */; };
 		C63599CB23C273970046A700 /* TileItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63599CA23C273970046A700 /* TileItemViewModel.swift */; };
+		C6E6021E23C2934B0027F19B /* HomeItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E6021D23C2934B0027F19B /* HomeItemDetailView.swift */; };
+		C6E6022023C2A13F0027F19B /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E6021F23C2A13F0027F19B /* NotificationsView.swift */; };
+		C6E6022223C2A1EB0027F19B /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E6022123C2A1EB0027F19B /* AppBarView.swift */; };
+		C6E6022423C2A2F60027F19B /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E6022323C2A2F60027F19B /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		C63599C523C2679F0046A700 /* TileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileItem.swift; sourceTree = "<group>"; };
 		C63599C823C2732A0046A700 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
 		C63599CA23C273970046A700 /* TileItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileItemViewModel.swift; sourceTree = "<group>"; };
+		C6E6021D23C2934B0027F19B /* HomeItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDetailView.swift; sourceTree = "<group>"; };
+		C6E6021F23C2A13F0027F19B /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		C6E6022123C2A1EB0027F19B /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		C6E6022323C2A2F60027F19B /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +124,11 @@
 		C63599B923C24D170046A700 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C63599BA23C24D270046A700 /* HomeView.swift */,
+				C6E6021D23C2934B0027F19B /* HomeItemDetailView.swift */,
 				C63599C323C25B040046A700 /* HomeItemView.swift */,
+				C63599BA23C24D270046A700 /* HomeView.swift */,
+				C6E6022323C2A2F60027F19B /* LocationView.swift */,
+				C6E6021F23C2A13F0027F19B /* NotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,8 +136,9 @@
 		C63599BC23C24D720046A700 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
-				C63599BD23C24D800046A700 /* TabBarView.swift */,
+				C6E6022123C2A1EB0027F19B /* AppBarView.swift */,
 				C63599BF23C256980046A700 /* HorizontalLine.swift */,
+				C63599BD23C24D800046A700 /* TabBarView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -232,9 +244,13 @@
 				C63599B823C24BD20046A700 /* AppColor.swift in Sources */,
 				C63599A423C247DF0046A700 /* SceneDelegate.swift in Sources */,
 				C63599BB23C24D270046A700 /* HomeView.swift in Sources */,
+				C6E6022223C2A1EB0027F19B /* AppBarView.swift in Sources */,
+				C6E6022423C2A2F60027F19B /* LocationView.swift in Sources */,
 				C63599BE23C24D800046A700 /* TabBarView.swift in Sources */,
 				C63599A623C247DF0046A700 /* ContentView.swift in Sources */,
 				C63599C023C256980046A700 /* HorizontalLine.swift in Sources */,
+				C6E6021E23C2934B0027F19B /* HomeItemDetailView.swift in Sources */,
+				C6E6022023C2A13F0027F19B /* NotificationsView.swift in Sources */,
 				C63599C623C2679F0046A700 /* TileItem.swift in Sources */,
 				C63599CB23C273970046A700 /* TileItemViewModel.swift in Sources */,
 			);
